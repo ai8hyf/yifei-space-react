@@ -1,15 +1,13 @@
 import * as React from "react";
+import NavBar from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Home() {
     return (
-      <>
-        <main>
-          <h2>Welcome to the homepage!</h2>
-          <p>You can do this, I believe in you.</p>
-        </main>
-        <nav>
-          <a href="/about">About</a>
-        </nav>
-      </>
+      <div>
+        <NavBar/>
+
+        <Footer/>
+      </div>
     );
 }
