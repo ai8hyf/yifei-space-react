@@ -3,15 +3,40 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import { Container, Divider, List, ListItem, Typography } from '@mui/material';
-import { Link } from "react-router-dom";
+import { Container, Divider, List, ListItem, Typography, Link } from '@mui/material';
+import "../assets/css/footer.css"
 
 export default function Footer() {
+
+    const directoryLinks = [['Home', '/'], ['Portfolio', '/portfolio'], ['About Me', '/about'], ['Contact', '/contact']]
+
     return (
-        <Box sx={{position: 'absolute', bottom: 0, width:'100%' }}>
+        <Box sx={{width:'100%', pb:2 }} id='footer'>
             <Container maxWidth='xl'>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}>
+                    <Grid item md={4} xs={6} sx={{display:'flex', justifyContent:'center'}}>
+                        <List>
+                            <ListItem>
+                                <Typography variant="h5">
+                                    Directory
+                                </Typography>
+                            </ListItem>
+
+                            {directoryLinks.map((dl, index) => (
+                                <ListItem key={index}>
+                                    <Link 
+                                        color="inherit" 
+                                        underline="hover"
+                                        variant="overline"
+                                        href={dl[1]}
+                                    >
+                                        {dl[0]}
+                                    </Link>
+                                </ListItem>
+                            ))}
+                        </List>
+                    </Grid>
+                    <Grid item md={4} xs={6} sx={{display:'flex', justifyContent:'center'}}>
                         <List>
                             <ListItem>
                                 <Typography variant="h5">
@@ -19,23 +44,20 @@ export default function Footer() {
                                 </Typography>
                             </ListItem>
                             <ListItem>
-                                <Link to='/'>UI / UX</Link>
+                                <Link href='/'>UI / UX</Link>
                             </ListItem>
                             <ListItem>
-                                <Link to='/'>Research</Link>
+                                <Link href='/'>Research</Link>
                             </ListItem>
                             <ListItem>
-                                <Link to='/'>Original Music</Link>
+                                <Link href='/'>Original Music</Link>
                             </ListItem>
                             <ListItem>
-                                <Link to='/'>Social Influencing</Link>
+                                <Link href='/'>Social Influencing</Link>
                             </ListItem>
                         </List>
                     </Grid>
-                    <Grid item xs={4}>
-                        {123}
-                    </Grid>
-                    <Grid item xs={4}>
+                    <Grid item md={4} xs={12} sx={{display:'flex', justifyContent:'center'}}>
                     <List>
                         <ListItem>
                             <Typography variant="h5">
