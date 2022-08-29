@@ -9,12 +9,14 @@ import "../assets/css/footer.css"
 export default function Footer() {
 
     const directoryLinks = [['Home', '/'], ['Portfolio', '/portfolio'], ['About Me', '/about'], ['Contact', '/contact']]
+    const portfolioLinks = [['UI/UX', '/'], ['Research', '/portfolio'], ['Original Music', '/about'], ['Social Influencing', '/contact']]
+
 
     return (
         <Box sx={{width:'100%', pb:2 }} id='footer'>
-            <Container maxWidth='xl'>
-                <Grid container spacing={2}>
-                    <Grid item md={4} xs={6} sx={{display:'flex', justifyContent:'center'}}>
+            <Container maxWidth='lg'>
+                <Grid container>
+                    <Grid item md={4} xs={6} sx={{display:'flex'}}>
                         <List>
                             <ListItem>
                                 <Typography variant="h5">
@@ -27,7 +29,7 @@ export default function Footer() {
                                     <Link 
                                         color="inherit" 
                                         underline="hover"
-                                        variant="overline"
+                                        variant="body2"
                                         href={dl[1]}
                                     >
                                         {dl[0]}
@@ -36,28 +38,28 @@ export default function Footer() {
                             ))}
                         </List>
                     </Grid>
-                    <Grid item md={4} xs={6} sx={{display:'flex', justifyContent:'center'}}>
+                    <Grid item md={4} xs={6} sx={{display:'flex'}}>
                         <List>
                             <ListItem>
                                 <Typography variant="h5">
                                     Portfolio
                                 </Typography>
                             </ListItem>
-                            <ListItem>
-                                <Link href='/'>UI / UX</Link>
-                            </ListItem>
-                            <ListItem>
-                                <Link href='/'>Research</Link>
-                            </ListItem>
-                            <ListItem>
-                                <Link href='/'>Original Music</Link>
-                            </ListItem>
-                            <ListItem>
-                                <Link href='/'>Social Influencing</Link>
-                            </ListItem>
+                            {portfolioLinks.map((pl, index) => (
+                                <ListItem key={index}>
+                                    <Link 
+                                        color="inherit" 
+                                        underline="hover"
+                                        variant="body2"
+                                        href={pl[1]}
+                                    >
+                                        {pl[0]}
+                                    </Link>
+                                </ListItem>
+                            ))}
                         </List>
                     </Grid>
-                    <Grid item md={4} xs={12} sx={{display:'flex', justifyContent:'center'}}>
+                    <Grid item md={4} xs={12} sx={{display:'flex'}}>
                     <List>
                         <ListItem>
                             <Typography variant="h5">
