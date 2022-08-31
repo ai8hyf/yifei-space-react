@@ -1,7 +1,6 @@
 .img-bg-card{
 	position: relative;
 	border-radius: 16px !important;
-	box-sizing: border-box;
 }
 
 .img-bg-card img.cover-img{
@@ -19,11 +18,12 @@
 	background: linear-gradient(
 		0deg, 
 		rgba(0,0,0,1) 0%,
-		rgba(0,0,0,.2) 30%,
+		rgba(0,0,0,.4) 30%,
 		rgba(0,0,0,.1) 40%,
 		rgba(0,0,0,0) 100%);
 	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	text-shadow: 2px 2px 4px #000000;
 }

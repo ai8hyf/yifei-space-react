@@ -1,0 +1,39 @@
+.img-top-card{
+    width: 100%;
+	box-sizing: border-box;
+	border: none !important;
+    text-align: center;
+}
+
+.img-top-card img{
+    border-radius: 16px;
+}
+
+.img-top-card .img-with-text{
+    position: relative;
+}
+
+.img-top-card .card-text-overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+    padding: 16px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.55);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    text-shadow: 2px 2px 4px #000000;
+    transition: all .3s;
+}
+
+.img-top-card .card-text-overlay:hover{
+    background: rgba(0,0,0,.8);
+    cursor: pointer;
+    transition: all .3s;
+}

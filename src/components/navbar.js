@@ -1,4 +1,8 @@
 import * as React from 'react';
+
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 import { Link } from "react-router-dom";
 
 import AppBar from '@mui/material/AppBar';
@@ -14,9 +18,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '../assets/img/name-logo.png';
 
 
-const pages = ['Home', 'Portfolio', 'About Me', 'Contact'];
+
 
 const NavBar = () => {
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
+
+  let navHeight = 80
+
+  if(!isDesktop){
+    navHeight = 50
+  }
+
+  const pages = ['Home', 'Portfolio', 'About Me', 'Contact'];
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -28,9 +44,9 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" color='inherit' elevation={0}>
+    <AppBar position="sticky" color='inherit' elevation={0} sx={{my:3}}>
       <Container maxWidth="lg" >
-        <Toolbar disableGutters sx={{ height: 80 }}>
+        <Toolbar disableGutters sx={{ height: navHeight }}>
           <Box
             component="img"
             src={Logo}

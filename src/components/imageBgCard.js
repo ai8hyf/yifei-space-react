@@ -20,7 +20,7 @@ export default function ImageBgCard(props) {
   let cardMaxHeight = '400px'
   let cardHeight = '400px'
   let cardPadding = '24px';
-  let coverPosition = '50% 20%';
+  let coverPosition = '50% 40%';
 
   if (!isDesktop) {
     cardMaxHeight = '250px'
@@ -33,22 +33,22 @@ export default function ImageBgCard(props) {
   }
 
   return (
-    <Card className='img-bg-card' sx={{ maxHeight: cardMaxHeight }}>
+    <Card variant='elevation' className='img-bg-card' sx={{ maxHeight: cardMaxHeight }}>
       <Box>
-        <img className='cover-img' src={SamplePerson} alt="Cover Image" style={{ maxHeight: cardMaxHeight, objectPosition: coverPosition, height: cardHeight }} />
+        <img className='cover-img' src={props.coverPhoto} alt="Cover Image" style={{ maxHeight: cardMaxHeight, objectPosition: coverPosition, height: cardHeight }} />
       </Box>
 
       {props.hasText &&
         <Box className='card-text-overlay' sx={{ padding: cardPadding }}>
 
           {props.title != 'null' &&
-            <Typography variant={isDesktop ? 'h2' : 'h5'} sx={{ textTransform: 'uppercase', fontFamily: 'serif', letterSpacing: '0.2rem' }}>
+            <Typography variant={isDesktop ? 'h2' : 'h4'} sx={{ textTransform: 'uppercase', fontFamily: 'serif', letterSpacing: '0.2rem' }}>
               {props.title}
             </Typography>
           }
 
           {props.title != 'null' &&
-            <Typography variant='subtitle1' sx={{ fontFamily: 'serif' }}>
+            <Typography variant='subtitle2'>
               {props.desc}
             </Typography>
           }
