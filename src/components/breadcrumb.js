@@ -12,7 +12,8 @@ export default function Breadcrumb() {
 		'portfolio': 'Portfolio',
 		'music': 'Original Music',
 		'social': 'Social Influencing',
-		'ui-ux': 'UI/UX/Full-Stack'
+		'ui-ux': 'UI/UX/Full-Stack',
+		'about': 'About Me'
 	}
 
 	const levelLink = [['/', 'Home']]

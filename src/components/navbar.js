@@ -30,8 +30,7 @@ function ElevationScroll(props) {
   // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-    threshold: 2,
-    target: window ? window() : undefined,
+    threshold: 2
   });
 
   return React.cloneElement(children, {
@@ -157,7 +156,6 @@ const NavBar = (props) => {
       </AppBar>
       </ElevationScroll>
     </React.Fragment>
-
   );
 };
 export default NavBar;
