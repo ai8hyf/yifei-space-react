@@ -23,7 +23,7 @@ import Influencer from '../assets/img/influencer.jpg'
 export default function Home() {
   return (
     <div>
-      <NavBar />
+      <NavBar showBreadcrumb={false} />
       <Container maxWidth='lg'>
         <Grid container spacing={3}>
           <Grid
