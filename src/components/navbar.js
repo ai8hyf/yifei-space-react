@@ -59,7 +59,13 @@ const NavBar = (props) => {
     navHeight = 50
   }
 
-  const pages = [['Home', '/'], ['Portfolio', '/portfolio'], ['About Me', '/about'], ['Contact', 'contact']];
+  const pages = [
+    ['UI/UX/DEV', '/portfolio'],
+    ['Research', '/research'],
+    ['Music', '/music'],
+    ['Influence', '/influencer'],
+    ['About', '/about']
+  ];
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -89,6 +95,7 @@ const NavBar = (props) => {
               />
             </Link>
             
+            <Link to='/'>
             <Box
               component="img"
               src={Logo}
@@ -96,6 +103,7 @@ const NavBar = (props) => {
               sx={{ display: { xs: 'flex', md: 'none' }, mx: 1, height: 30 }}
             >
             </Box>
+            </Link>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
               <IconButton

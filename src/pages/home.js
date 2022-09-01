@@ -1,6 +1,7 @@
 import * as React from "react";
 
-import { Container, Grid, Divider, Chip } from '@mui/material';
+import { Container, Grid, Divider, Chip, Link } from '@mui/material';
+
 
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
@@ -75,8 +76,8 @@ export default function Home() {
 
         </Grid>
 
-        <Divider sx={{my:4}}>
-          <Chip icon={<TipsAndUpdatesIcon/>} label="My Last Name Sounds like [ Who ]" />
+        <Divider sx={{ my: 4 }}>
+          <Chip icon={<TipsAndUpdatesIcon />} label="My Last Name Sounds like [ Who ]" />
         </Divider>
 
         <Grid container spacing={3}>
@@ -88,11 +89,14 @@ export default function Home() {
             />
           </Grid>
           <Grid item lg={4} md={4} sm={6} xs={12} >
-            <ImageTopCard
-              topImage={Research}
-              title={"Research"}
-              desc={'Papers published by Yifei and research projects that involved Yifei'}
-            />
+            <Link href="/research">
+              <ImageTopCard
+                topImage={Research}
+                title={"Research"}
+                desc={'Papers published by Yifei and research projects that involved Yifei'}
+              />
+            </Link>
+
           </Grid>
           <Grid item lg={4} md={4} sm={12} xs={12} >
             <ImageTopCard
@@ -109,15 +113,18 @@ export default function Home() {
             />
           </Grid>
           <Grid item lg={6} md={6} sm={6} xs={12}>
-            <ImageTopCard
-              topImage={Connect}
-              title={"Contact Me"}
-              desc={'We can talk.'}
-            />
+            <Link href="/about">
+              <ImageTopCard
+                topImage={Connect}
+                title={"Contact Me"}
+                desc={'We can talk.'}
+              />
+            </Link>
+
           </Grid>
         </Grid>
 
-        <Divider sx={{my:4}}>
+        <Divider sx={{ my: 4 }}>
           <Chip label="That's it, my friend." />
         </Divider>
 
