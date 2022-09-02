@@ -63,7 +63,7 @@ const NavBar = (props) => {
     ['UI/UX/DEV', '/portfolio'],
     ['Research', '/research'],
     ['Music', '/music'],
-    ['Influence', '/influencer'],
+    ['Influence', '/influence'],
     ['About', '/about']
   ];
 

@@ -11,7 +11,7 @@ export default function Breadcrumb() {
 		'research': 'Research',
 		'portfolio': 'Portfolio',
 		'music': 'Original Music',
-		'social': 'Social Influencing',
+		'influence': 'Social Influencing',
 		'ui-ux': 'UI/UX/Full-Stack',
 		'about': 'About Me'
 	}

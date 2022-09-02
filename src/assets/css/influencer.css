@@ -1,0 +1,35 @@
+.font-box{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 24px;
+}
+
+.font-box>img{
+	max-height: 80px;
+	max-width: 60%;
+	margin-bottom: 24px;
+}
+
+.font-box>img:nth-child(2){
+	max-height: 50px;
+	max-width: 100%;
+}
+
+.font-box>img:nth-child(3){
+	max-height: 150px;
+	max-width: 100%;
+	margin-bottom: 0;
+}
+
+.big-banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.big-banner > img{
+	width: 400px;
+	max-width: calc(100% - 40px);
+}
