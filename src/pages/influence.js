@@ -39,28 +39,29 @@ export default function Influence() {
 				<Grid container>
 					<Grid item lg={6} md={6} sm={12} xs={12}>
 					<Box sx={{background:'#f5f5f5', p
-				:4}}>
+				:4, mb:4}}>
 						<Typography variant="h4" sx={{mb:1, textAlign:'center'}}>
 							How should I start...
 						</Typography>
-						<Typography variant="subtitle1" sx={{mb:1, textAlign:'center'}}>This part of me is dead</Typography>
-						<Typography variant="body2" sx={{mt:3, fontSize:'1rem'}}>
-							{'I must admit that I am such an awful writer when writing in English, and I realized I didn\'t even have a proper "About Me" piece in any languages. So, I decided to write some paragraphs while I was coding (is "code" even a proper verb?) this website.'}
+						
+						<Typography variant="subtitle2" sx={{mt:3}}>
+							{'I used to have a very significant influence on a certain domain. Others published '}<a href="https://new.qq.com/rain/a/20201230a05l8g00">news articles</a>{' or '}<a href="https://k.sina.com.cn/article_6618707265_18a817541019014o8x.html#/">blog posts</a>{' simply to discuss what I said. One day, I decided to disappear, so I disappeared for good.'}
 						</Typography>
 						<Typography variant="body2" sx={{mt:3, fontSize:'1rem'}}>
-							{'A few years before this century began, I was born in a small city in northern China. Due to the “'}<a href='https://en.wikipedia.org/wiki/One-child_policy'>One-child policy</a>{'” in my populous motherland, I have no siblings. Of course, the positive part is that I do not need to share my parents’ love with others. Growing up alone in a family of engineers helped me appreciate the beauty of solitary moments.'}
+							{'Once upon a time, I was the most popular influencer in the '}<a href="https://en.wikipedia.org/wiki/Go_(game)">Go Game</a>{' community in China. Go is a traditional Chinese board game. As you might recall, the Chess A.I. "Deep Blue" defeated the human Champion Kasparov in 1997. However, Go is more complex than Chess. Only until 2016, Deepmind\' A.I. '}<a href="https://www.deepmind.com/research/highlighted-research/alphago">"AlphaGo"</a>{' finally achieved what was expected.'}
 						</Typography>
 						<Typography variant="body2" sx={{mt:3, fontSize:'1rem'}}>
-							{'Nonetheless, I\'ve never been any close to the characteristics of a “nerd”, “geek” or “freak”. People usually find me being talkative and good with humor. I know how many ex-boyfriends Taylor Swift had. Talk like Master Yoda I can. I am fully capable of being social yet many times I choose not to mingle with people lacking the sense of decency. That is probably why I am still often alone and tend to keep the status quo.'}
+							{'I know exactly why I became successful in this field. I was only the top 1% Go player (Thousands are better than me), but in the meantime I was also the top 1% content creator, top 5% video editor, and with top 1% taste of humor and sensitivity. All things combined, I simply became the best overall.'}
 						</Typography>
 
 						<Typography variant="body2" sx={{mt:3, fontSize:'1rem'}}>
-							{'Before I entered high school, my parents promised to buy me a new smartphone and allowed me to choose whichever one I liked. My journey of being a researcher probably started from there. I spent tons of time doing my own thorough and practical research of how a smartphone worked and what the purpose of each component inside a smartphone was. The research I did and have been doing till now all have some very specific and tangible objectives. I do research for problem-solving and nothing else, which partially explains why I have so few '}<a href='/research'>academic publications</a>{' as a Phd student. (Other reasons being that I am lazy and bad at writing)'}
+							{'Unfortunately, social influence often comes with a cost. People talk, and words hurt. One sunny day in the spring of 2021, right after I received my Master degree and started my Phd journey, I felt extremely exhausted. I did not want to think about Go or open the video editing software. Direct messages came from all platforms. People tried to connect with me for various good or bad reasons. I don\'t think most of you could or would ever sympathize with me, which after all might be a good thing for you.'}
 						</Typography>
 					</Box>
 					</Grid>
 
 					<Grid item lg={6} md={6} sm={12} xs={12}>
+						<Box sx={{height:'100%', display:'flex', justifyContent:'space-evenly', flexDirection:'column', }}>
 						<Link href="/research">
 							<Box className="big-banner">
 								<img src={bili} alt="" />
@@ -83,6 +84,7 @@ export default function Influence() {
 								<img src={tc} alt="" />
 							</Box>
 						</Link>
+						</Box>
 					</Grid>
 				</Grid>
 

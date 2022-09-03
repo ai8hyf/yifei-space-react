@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 import ImageTopCard from "../components/imageTopCard";
 import ResearchItem from "../components/researchItem";
 
-import ResearchCover from '../assets/img/research.jpg'
+import ResearchCover from '../assets/img/research-font.png'
 
 export default function Research() {
 	return (
@@ -18,10 +18,15 @@ export default function Research() {
 
 				<Grid container spacing={3}>
 					<Grid item lg={4} md={4} sm={12} xs={12}>
-						<ImageTopCard
-							topImage={ResearchCover}
-							title={'Research'}
-						/>
+						<Box sx={{display:'flex', justifyContent:'center'}}>
+							<img style={{maxWidth:'100%'}} src={ResearchCover}/>
+						</Box>
+						<Box sx={{display:'flex', justifyContent:'center', opacity:'.5'}}>
+							<img style={{maxWidth:'100%'}} src={ResearchCover}/>
+						</Box>
+						<Box sx={{display:'flex', justifyContent:'center', opacity:'.15'}}>
+							<img style={{maxWidth:'100%'}} src={ResearchCover}/>
+						</Box>
 						<Typography variant='subtitle1' sx={{p:1, textAlign:'center'}}>
 							 {'Most of the research projects focused on Natural Language Processing (NLP)'}
 						</Typography>

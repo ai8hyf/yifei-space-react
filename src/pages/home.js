@@ -21,6 +21,8 @@ import Uiux from '../assets/img/uiux.jpg'
 import Research from '../assets/img/research.jpg'
 import Influencer from '../assets/img/influencer.jpg'
 
+
+
 export default function Home() {
   return (
     <div>

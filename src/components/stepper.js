@@ -54,8 +54,10 @@ export default function StepperWithLabel() {
 	let itemAlign = 'center';
 	let itemMarginPadding = 0;
 	let itemBoxBorder = 'none';
+	let componentMarginTop = 3;
 
 	if(!isDesktop){
+		componentMarginTop = 0
 		isVertical = 'vertical'
 		itemAlign = 'left'
 		itemMarginPadding = 2
@@ -63,7 +65,7 @@ export default function StepperWithLabel() {
 	}
 
 	return (
-		<Box sx={{ width: '100%' }}>
+		<Box sx={{ width: '100%', pt: componentMarginTop }}>
 			<Stepper activeStep={steps.length - 1} orientation={isVertical} alternativeLabel={isDesktop}>
 				{steps.map((s, idx) => (
 					<Step expanded={true} key={s.label}>

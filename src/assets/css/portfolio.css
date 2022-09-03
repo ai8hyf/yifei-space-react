@@ -1,0 +1,12 @@
+.chip-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.chip-box>div{
+    margin: 4px;
+}
