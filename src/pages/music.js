@@ -23,8 +23,6 @@ export default function Music() {
         <div>
             <NavBar showBreadcrumb={true} />
 
-
-
             <Container maxWidth='lg' sx={{ mb: 4, mt: 4 }}>
 
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb:6 }}>
@@ -34,7 +32,7 @@ export default function Music() {
                 <Grid container spacing={3}>
                     <Grid item lg={5} md={6} sm={12} xs={12}>
                     <Box sx={{display:'flex', width:'100%', margin:'0 auto'}}>
-                        <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1492766272&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <iframe width="100%" height="500" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1492766272&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                     </Box>
                     </Grid>
 

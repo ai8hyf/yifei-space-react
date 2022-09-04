@@ -28,7 +28,7 @@ export default function Breadcrumb() {
 		<Box sx={{ml:1, mb:1}}>
 			<Breadcrumbs aria-label="breadcrumb">
 				{levelLink.map((l) =>(
-					<Link underline="hover" color="inherit" href={l[0]}>
+					<Link key={l[0]} underline="hover" color="inherit" href={l[0]}>
 						{l[1]}
 					</Link>
 				))}

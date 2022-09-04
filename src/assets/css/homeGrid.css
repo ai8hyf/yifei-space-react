@@ -1,0 +1,33 @@
+.home-grid-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+a.text-over-lay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a.text-over-lay:hover{
+    background-color: rgba(0,0,0,0.7);
+    transition: all .3s;
+}
+
+a.text-over-lay:visited{
+    color: white;
+}

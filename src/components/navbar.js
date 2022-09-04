@@ -128,7 +128,7 @@ const NavBar = (props) => {
                 <List>
                   {pages.map((page) => (
                     <ListItem key={page} onClick={handleCloseNavMenu}>
-                      <Link to={page[1]} style={{ textDecoration: 'none' }}>
+                      <Link key={page[0]} to={page[1]} style={{ textDecoration: 'none' }}>
                         <Button
                           sx={{ my: 1, mx: 2, color: 'black', fontSize: 16 }}
                         >
@@ -143,7 +143,7 @@ const NavBar = (props) => {
 
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
               {pages.map((page) => (
-                <Link to={page[1]} style={{ textDecoration: 'none' }}>
+                <Link key={page[0]} to={page[1]} style={{ textDecoration: 'none' }}>
                   <Button
                     key={page}
                     onClick={handleCloseNavMenu}

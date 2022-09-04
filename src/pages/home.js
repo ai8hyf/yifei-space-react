@@ -1,5 +1,8 @@
 import * as React from "react";
 
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 import { Container, Grid, Divider, Chip, Link } from '@mui/material';
 
 
@@ -7,6 +10,7 @@ import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import ImageBgCard from "../components/imageBgCard";
 import ImageTopCard from "../components/imageTopCard";
+import HomeGrid from "../components/homeGrid";
 
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
@@ -21,116 +25,55 @@ import Uiux from '../assets/img/uiux.jpg'
 import Research from '../assets/img/research.jpg'
 import Influencer from '../assets/img/influencer.jpg'
 
+import pianoImg from '../assets/img/piano.jpg'
+import whiteboard from '../assets/img/script.jpg'
+import socialMedia from '../assets/img/social-media.jpg'
+import blackboard from '../assets/img/blackboard.jpg'
+
 
 
 export default function Home() {
+
+  const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+    const isMid = useMediaQuery(theme.breakpoints.down('lg'));
+
+    let containerHeight = 'calc(100vh - 128px)'
+    let gridHeight = 'auto'
+
+    if(isMid){
+      containerHeight = 'calc(100vh - 128px)'
+      gridHeight = '50%'
+    }
+
+    if(isMobile){
+      containerHeight = 'calc(100vh - 98px)'
+      gridHeight = '33.33%'
+    }
+
+    const grids = [
+      {'bg': whiteboard, 'title':'Full-Stack Portfolio', 'link': '/portfolio'},
+      {'bg': blackboard, 'title':'Research Highlights', 'link': '/research'},
+      {'bg': socialMedia, 'title':'Social Influence', 'link': '/influence'},
+      {'bg': pianoImg, 'title':'Original Music', 'link': '/music'},
+    ]
+
   return (
     <div>
       <NavBar showBreadcrumb={false} />
-      <Container maxWidth='lg'>
-        <Grid container spacing={3}>
-          <Grid
-            item
-            lg={6}
-            md={6}
-            sm={6}
-            xs={12}
 
-          >
-            <ImageBgCard
-              coverPhoto={CoverPhoto}
-              hasText={false}
-              title={'Yifei Hu'}
-              desc={'Your IP address has been recorded. <-- I am kidding. Am I kidding?'}
-            />
+      <Grid container columns={{ xs: 2, sm: 2, md: 4, lg: 5 }} sx={{height:containerHeight}}>
+          <Grid item xs={2} sm={2} md={4} lg={1} sx={{height:gridHeight}}>
+            <HomeGrid bg={CoverPhoto} title={'About Me'} link={'/about'}/>
           </Grid>
 
-          <Grid
-            item
-            lg={3}
-            md={3}
-            sm={3}
-            xs={6}
-          >
-            <ImageBgCard
-              coverPhoto={CatEditorCover}
-              hasText={true}
-              desc={'Cat Generator - Create You Own Cat Now!'}
-              isVertical={true}
-            />
-          </Grid>
-
-          <Grid
-            item
-            lg={3}
-            md={3}
-            sm={3}
-            xs={6}
-          >
-            <ImageBgCard
-              coverPhoto={Resume}
-              hasText={true}
-              desc={'Resume - I am expensive but available :)'}
-              isVertical={true}
-            />
-          </Grid>
-
-
+          {grids.map((g)=>(
+            <Grid item xs={1} sm={1} md={1} lg={1} sx={{height:gridHeight}} key={g.link}>
+              <HomeGrid bg={g.bg} title={g.title} link={g.link}/>
+            </Grid>
+          ))}
         </Grid>
 
-        <Divider sx={{ my: 4 }}>
-          <Chip icon={<TipsAndUpdatesIcon />} label="My Last Name Sounds like [ Who ]" />
-        </Divider>
-
-        <Grid container spacing={3}>
-          <Grid item lg={4} md={4} sm={6} xs={12} >
-            <ImageTopCard
-              topImage={Uiux}
-              title={"UI/UX"}
-              desc={'Projects designed and implemented by Yifei. From websites to desktop apps.'}
-            />
-          </Grid>
-          <Grid item lg={4} md={4} sm={6} xs={12} >
-            <Link href="/research">
-              <ImageTopCard
-                topImage={Research}
-                title={"Research"}
-                desc={'Papers published by Yifei and research projects that involved Yifei'}
-              />
-            </Link>
-
-          </Grid>
-          <Grid item lg={4} md={4} sm={12} xs={12} >
-            <ImageTopCard
-              topImage={Influencer}
-              title={"Social Influencing"}
-              desc={'Fun Fact: Yifei has more than 150,000 subscribers online. He was once the most famous content creator in the Go Game community.'}
-            />
-          </Grid>
-          <Grid item lg={6} md={6} sm={6} xs={12}>
-            <ImageTopCard
-              topImage={Music}
-              title={"Original Music"}
-              desc={'Most of them were from my music composition class. I have a minor in Music Theory & History'}
-            />
-          </Grid>
-          <Grid item lg={6} md={6} sm={6} xs={12}>
-            <Link href="/about">
-              <ImageTopCard
-                topImage={Connect}
-                title={"Contact Me"}
-                desc={'We can talk.'}
-              />
-            </Link>
-
-          </Grid>
-        </Grid>
-
-        <Divider sx={{ my: 4 }}>
-          <Chip label="That's it, my friend." />
-        </Divider>
-
-      </Container>
       <Footer />
     </div>
   );
