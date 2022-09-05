@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yifei-space-react/static/css/main.f0ff5bb1.css",
-    "main.js": "/yifei-space-react/static/js/main.85a41e3a.js",
+    "main.js": "/yifei-space-react/static/js/main.01e4dd37.js",
     "static/media/cover-square.png": "/yifei-space-react/static/media/cover-square.159783d41f1dc0763f22.png",
     "static/media/slim-cover.png": "/yifei-space-react/static/media/slim-cover.dc2f867b933f00887736.png",
     "static/media/cco-about-1.png": "/yifei-space-react/static/media/cco-about-1.ba98f48c3760539bc4a1.png",
@@ -26,10 +26,10 @@
     "static/media/youtube_logo.png": "/yifei-space-react/static/media/youtube_logo.a676ea31f6d4cf08b9d2.png",
     "index.html": "/yifei-space-react/index.html",
     "main.f0ff5bb1.css.map": "/yifei-space-react/static/css/main.f0ff5bb1.css.map",
-    "main.85a41e3a.js.map": "/yifei-space-react/static/js/main.85a41e3a.js.map"
+    "main.01e4dd37.js.map": "/yifei-space-react/static/js/main.01e4dd37.js.map"
   },
   "entrypoints": [
     "static/css/main.f0ff5bb1.css",
-    "static/js/main.85a41e3a.js"
+    "static/js/main.01e4dd37.js"
   ]
 }
