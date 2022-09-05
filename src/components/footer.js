@@ -1,24 +1,20 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import { Container, Divider, Typography, Link } from '@mui/material';
+import { Container, Typography, Link } from '@mui/material';
 
 
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
 
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import ArticleIcon from '@mui/icons-material/Article';
 import LaunchIcon from '@mui/icons-material/Launch';
 
-import "../assets/css/footer.css"
 
 export default function Footer() {
 
@@ -72,24 +68,7 @@ export default function Footer() {
                                 </Link>
 
                             </ListItem>
-                            <ListItem disablePadding>
-                                <Link sx={{ width: '100%' }} color="text.primary" underline='hover' href='https://space.bilibili.com/7725983' target={'_blank'}>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            <LaunchIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="Bilibili.com" />
-                                    </ListItemButton>
-                                </Link>
-                            </ListItem>
-                            <ListItem disablePadding>
-                                <ListItemButton>
-                                    <ListItemIcon>
-                                        <EmailIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Email" />
-                                </ListItemButton>
-                            </ListItem>
+                            
                             <ListItem disablePadding>
                                 <Link sx={{ width: '100%' }} color="text.primary" underline='hover' href='https://www.linkedin.com/in/yifei-hu-683499113/' target={'_blank'}>
                                     <ListItemButton>
@@ -99,7 +78,26 @@ export default function Footer() {
                                         <ListItemText primary="Linkedin" />
                                     </ListItemButton>
                                 </Link>
-
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <Link sx={{ width: '100%' }} color="text.primary" underline='hover' href='mailto:ai8hyf@gmail.com'>
+                                    <ListItemButton>
+                                        <ListItemIcon>
+                                            <EmailIcon />
+                                        </ListItemIcon>
+                                        <ListItemText primary="Email" />
+                                    </ListItemButton>
+                                </Link>
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <Link sx={{ width: '100%' }} color="text.primary" underline='hover' href='https://space.bilibili.com/7725983' target={'_blank'}>
+                                    <ListItemButton>
+                                        <ListItemIcon>
+                                            <LaunchIcon />
+                                        </ListItemIcon>
+                                        <ListItemText primary="Bilibili.com" />
+                                    </ListItemButton>
+                                </Link>
                             </ListItem>
                         </List>
                     </Grid>

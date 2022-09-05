@@ -4,9 +4,7 @@ import { Container, Grid, Box, Typography, Link } from '@mui/material';
 
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
-import ImageTopCard from "../components/imageTopCard";
 import StepperWithLabel from "../components/stepper";
-
 
 import "../assets/css/influencer.css"
 
@@ -62,24 +60,24 @@ export default function Influence() {
 
 					<Grid item lg={6} md={6} sm={12} xs={12}>
 						<Box sx={{height:'100%', display:'flex', justifyContent:'space-evenly', flexDirection:'column', }}>
-						<Link href="/research">
+						<Link href="https://space.bilibili.com/7725983">
 							<Box className="big-banner">
 								<img src={bili} alt="" />
 							</Box>
 						</Link>
 
-						<Link href="/research">
+						<Link href="https://www.youtube.com/channel/UCfGY9xUbDuSGWO-t5nIC33A">
 							<Box className="big-banner">
 								<img src={yt} alt="" />
 							</Box>
 						</Link>
 
-						<Link href="/research">
+						<Link href="https://www.ixigua.com/home/3254169225659182">
 							<Box className="big-banner">
 								<img src={tt} alt="" />
 							</Box>
 						</Link>
-						<Link href="/research">
+						<Link href="#">
 							<Box className="big-banner">
 								<img src={tc} alt="" />
 							</Box>

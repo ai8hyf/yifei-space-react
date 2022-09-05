@@ -32,7 +32,6 @@ export default function Breadcrumb() {
 						{l[1]}
 					</Link>
 				))}
-
 				<Typography color="text.primary">{levelName[levels[levels.length-1]]}</Typography>
 			</Breadcrumbs>
 		</Box>

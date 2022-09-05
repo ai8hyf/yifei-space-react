@@ -7,11 +7,6 @@ import { Typography } from '@mui/material';
 import StepContent from '@mui/material/StepContent';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import ListIcon from '@mui/icons-material/List';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import ErrorIcon from '@mui/icons-material/Error';
-import { color } from '@mui/system';
-
 
 
 export default function StepperWithLabel() {
@@ -80,9 +75,6 @@ export default function StepperWithLabel() {
 								<Typography variant='body2' key={'step-item' + index} sx={{ textAlign: itemAlign, mt: 1}}>{item}</Typography>
 							))}
 						</StepContent>
-
-
-
 					</Step>
 				))}
 			</Stepper>

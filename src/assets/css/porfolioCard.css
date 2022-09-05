@@ -1,0 +1,57 @@
+.porfolio-bg-card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    transition: all .3s;
+    background-color: white;
+}
+
+.porfolio-bg-card:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .3s;
+    z-index: 1022;
+    margin: 10px;
+}
+
+.porfolio-bg-card img.porfolio-cover-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 0;
+    
+}
+
+.portfolio-cover-container{
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    background-color: #e5e7e9;
+    border-radius: 8px;
+}
+
+
+
+.year-label{
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 16px;
+    top: 16px;
+    color: white;
+    font-weight: bolder;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    line-height: 1rem;
+    padding: 4px 8px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.portolio-label-area{
+    line-height: 24px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}

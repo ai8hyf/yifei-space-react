@@ -3,9 +3,7 @@ import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import { Link, Box, Typography, Icon } from '@mui/material';
-
-import ReadMoreIcon from '@mui/icons-material/ReadMore';
+import { Link, Box, Typography } from '@mui/material';
 
 import '../assets/css/homeGrid.css'
 

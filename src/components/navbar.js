@@ -15,7 +15,7 @@ import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { Icon, List, ListItem } from '@mui/material';
+import { List, ListItem } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '../assets/img/name-logo.png';

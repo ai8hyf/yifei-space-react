@@ -5,7 +5,6 @@ import { Container, Grid, Box, Typography } from '@mui/material';
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
 import CardWithLinks from "../components/cardWithLinks";
-import { Link } from "react-router-dom";
 
 
 export default function About() {

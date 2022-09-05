@@ -1,22 +1,11 @@
 import * as React from "react";
 
-import { Container, Grid, Box, Typography, Link } from '@mui/material';
+import { Container, Grid, Box, Typography } from '@mui/material';
 
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
-import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
-
-import ReactSoundCloud from 'react-soundcloud-embedded'
 
 import MusicCover from '../assets/img/music-cover.png'
-
-import "../assets/css/soundcloud.css"
-
-import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
-
-import fullstack from "../assets/img/full-stack.png"
-
 
 export default function Music() {
     return (

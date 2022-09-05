@@ -3,28 +3,14 @@ import * as React from "react";
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-import { Container, Grid, Divider, Chip, Link } from '@mui/material';
+import { Grid } from '@mui/material';
 
 
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
-import ImageBgCard from "../components/imageBgCard";
-import ImageTopCard from "../components/imageTopCard";
 import HomeGrid from "../components/homeGrid";
 
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-
-import SamplePerson from '../assets/img/sample-person-img-square.jpg'
 import CoverPhoto from '../assets/img/cover-square.png'
-import CatEditorCover from '../assets/img/cat-editor.png'
-import Resume from '../assets/img/resume.jpg'
-import Connect from '../assets/img/connect.jpg'
-import Music from '../assets/img/music.jpg'
-import Uiux from '../assets/img/uiux.jpg'
-import Research from '../assets/img/research.jpg'
-import Influencer from '../assets/img/influencer.jpg'
-
 import pianoImg from '../assets/img/piano.jpg'
 import whiteboard from '../assets/img/script.jpg'
 import socialMedia from '../assets/img/social-media.jpg'
